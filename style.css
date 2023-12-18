@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red;
+    border-radius: 1rem; */
+}
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 55%;
+    left: 50%;
+    display: flex;
+    border-radius: 1rem;
+    border: 1px solid none;
+    box-shadow:  4px 7px 18px rgba(148, 189, 255, 0.777);
+    font-family: Hanken Grotesk ;
+}
+
+.content-1{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to top, hsl(240, 69%, 43%), hsl(241, 81%, 56%));
+    color: white;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+
+.head-content-1{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+.circle-content{
+    border: 2px solid none;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to top,hsl(241, 72%, 49%), hsl(253, 79%, 16%));
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow: hidden;
+}
+
+#circle-content-text-1{
+    font-size: 4rem;
+    font-weight: bold;
+    /* font-family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk); */
+}
+
+#circle-content-text-2{
+    font-size: 1rem;
+    opacity: 0.5;
+    padding: 0.2rem;
+}
+
+.text-1{
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+    /
+}
+
+.text-2{
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.5;
+}
+
+/* styling for content-2 */
+.content-2{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 1rem;
+    justify-content: space-evenly;
+}
+
+.head-content-2, .tab-1, .tab-2, .tab-3, .tab-4, .btn{
+    width: 80%;
+    font-size: 1rem;
+    /* border: 2px solid black; */
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.head-content-2{
+    font-weight: bold;
+    /* border: none; */
+}
+
+.tab-1{
+    background: hsl(0, 100%, 67%, 0.16);
+    padding-left: 4px;
+    padding-right: 4px;
+    border: none;
+}
+
+.tab-1-reaction{
+    display: flex;
+    align-items: center;
+    color: red;
+    opacity: 0.6;
+    gap: 0.2rem;
+}
+
+.tab-1-fig{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.fig-2{
+    opacity: 0.4;
+}
+
+.tab-2{
+    background: hsl(39, 100%, 56%, 0.16);
+    padding-left: 4px;
+    padding-right: 4px;
+    border: none;
+}
+
+.tab-2-memory{
+    display: flex;
+    align-items: center;
+    color: hsl(39, 100%, 56%);
+    opacity: 0.6;
+    gap: 0.2rem;
+}
+
+.tab-3{
+    background: hsl(166, 100%, 37%, 0.16);
+    padding-left: 4px;
+    padding-right: 4px;
+    border: none;
+}
+
+
+.tab-3-verbal{
+    display: flex;
+    align-items: center;
+    color: hsl(166, 100%, 37%);
+    opacity: 0.6;
+    gap: 0.2rem;
+}
+
+.tab-4{
+    background: hsl(234, 85%, 45%, 0.16);
+    padding-left: 4px;
+    padding-right: 4px;
+    border: none;
+}
+
+.tab-4-visual{
+    display: flex;
+    align-items: center;
+    color: hsl(234, 85%, 45%);
+    opacity: 0.6;
+    gap: 0.2rem;
+}
+
+.btn{
+    border: none;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0.8rem;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 1rem;
+}
+
+/* media queries @ 375px*/
+@media screen and (max-width: 800px) {
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .content-1{
+        border-radius: 0;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(239, 64%, 30%));
+    }
+
+    .circle-content{
+        background: linear-gradient(to top,hsl(241, 72%, 46%), hsl(256, 72%, 4%));
+    }
+    
+    .btn{
+        background-color: hsl(234, 85%, 45%);
+    }
+}
