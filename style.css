@@ -274,6 +274,7 @@ input button select {
 
 .homeContainer .cardContainer .whiteContainer .body .resultBreakdown-4 .score{
     font-size: 1.125rem;
+    font-weight: bold;
 }
 
 .homeContainer .cardContainer .whiteContainer .body .resultBreakdown-4 .score span{
