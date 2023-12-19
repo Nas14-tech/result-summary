@@ -17,8 +17,8 @@ body{
 
 
 .main-content{
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 50vh;
     /* left: 50%; */
     display: flex;
     border-radius: 1rem;
@@ -28,8 +28,8 @@ body{
 }
 
 .content-1{
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: auto;
     background: linear-gradient(to top, hsl(240, 69%, 43%), hsl(241, 81%, 56%));
     color: white;
     display: flex;    
@@ -86,8 +86,8 @@ body{
 /* styling for content-2 */
 .content-2{
     background-color: hsl(0, 0%, 100%);
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -199,8 +199,6 @@ body{
 /* media queries @ 375px*/
 @media screen and (max-width: 800px) {
     body{
-        width: 100vw;
-        height: 100vh;
         position: relative;
     }
 
@@ -208,8 +206,8 @@ body{
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        width: auto;
+        height: auto;
         align-items: center;
     }
 
