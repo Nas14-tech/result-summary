@@ -293,6 +293,10 @@ input button select {
     margin-top: 0.5rem;
 }
 
+.homeContainer .cardContainer .whiteContainer .action:hover{
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
 
 @media screen and (max-width: 650px) {
     .homeContainer {
